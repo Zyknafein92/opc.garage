@@ -1,13 +1,13 @@
 package option;
 
-public class Climatisation implements Option{
+public class Climatisation {
 
-	public Double getPrix() {
+	public Double getPrixO() {
 
-		return 113.5d;
+		return 347.3;
 	}
 
 	public String toString(){
-		return this.getClass().getSimpleName() + " (" + this.getPrix() + "€)";
+		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
 	}
 }

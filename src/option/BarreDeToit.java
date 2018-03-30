@@ -1,15 +1,15 @@
 package option;
 
-public class BarreDeToit implements Option {
+public class BarreDeToit {
 
-	@Override
-	public Double getPrix() {
+	public double getPrixO() {
 
 		return 29.9;
 	}
-	public String toString()
-	{
-		return this.getClass().getSimpleName() + " (" + this.getPrix() + "€)";
 
+	public String toString(){
+		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
 	}
+
+
 }

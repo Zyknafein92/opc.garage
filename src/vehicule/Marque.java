@@ -3,14 +3,14 @@ package vehicule;
 public enum Marque {
 
 
-	RENO("Reno"),
-	PIGEOT("Pigeot"),
-	TROEN("Troen");
+	RENO(" Voiture Reno"),
+	PIGEOT(" Voiture Pigeot"),
+	TROEN(" Voitue Troen");
 
-	private String marque = "";
+	protected String Marque = "";
 
-	Marque(String marque){
-		this.marque = marque;
+	    Marque(String Marque){
+		this.Marque = Marque;
 	}
 
 }

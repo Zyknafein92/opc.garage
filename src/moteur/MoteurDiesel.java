@@ -1,19 +1,13 @@
 package moteur;
 
-public class MoteurDiesel extends Moteur{
+import opc.garage.Moteur;
 
-	private double prixm;
-	
-	public MoteurDiesel (String cylindre, double prixm) {
-		super();
+public  class MoteurDiesel extends Moteur{
+
+	public MoteurDiesel(String cylindre, double prix) {
+		super(cylindre, prix);
+		 this.setType(TypeMoteur.DIESEL);
 	}
 
-	public double getPrixm() {
-		return prixm;
-	}
-
-	public void setPrixm(double prixm) {
-		this.prixm = 25147.0;
-	}
 }
 

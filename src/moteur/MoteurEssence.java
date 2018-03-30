@@ -1,17 +1,13 @@
 package moteur;
+import opc.garage.*;
 
-public class MoteurEssence {
-private double prixm;
+public class MoteurEssence extends Moteur {
+
+	public MoteurEssence(String cylindre, double prix) {
+		super(cylindre, prix);
+		this.setType(TypeMoteur.ESSENCE);
+	}
 	
-	public MoteurEssence () {
-		super();
-	}
-
-	public double getPrixm() {
-		return prixm;
-	}
-
-	public void setPrixm(double prixm) {
-		this.prixm = 23123.0;
-	}
 }
+
+

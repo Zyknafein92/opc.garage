@@ -1,18 +1,12 @@
 package moteur;
 
-public class MoteurHybride {
-private double prixm;
-	
-	public MoteurHybride () {
-		super();
-	}
+import opc.garage.Moteur;
 
-	public double getPrixm() {
-		return prixm;
-	}
+public class MoteurHybride extends Moteur{
 
-	public void setPrixm(double prixm) {
-		this.prixm = 28457.0;
+	public MoteurHybride(String cylindre, double prix) {
+		super(cylindre, prix);
+		 this.setType(TypeMoteur.HYBRIDE);
 	}
 
 }

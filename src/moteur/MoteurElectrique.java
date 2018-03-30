@@ -1,23 +1,12 @@
 package moteur;
+import opc.garage.Moteur;
 
-public class MoteurElectrique {
-private double prixm;
-	
-public MoteurElectrique() {
-		
-		super();
-	}
 
-	public MoteurElectrique(String string, double d) {
-	// TODO Auto-generated constructor stub
-}
+public class MoteurElectrique extends Moteur{
 
-	public double getPrixm() {
-		return prixm;
-	}
-
-	public void setPrixm(double prixm) {
-		this.prixm = 28457.0;
+	public MoteurElectrique(String cylindre, double prix) {
+		super(cylindre, prix);
+		 this.setType(TypeMoteur.ELECTRIQUE);
 	}
 
 }
