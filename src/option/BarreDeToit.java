@@ -1,6 +1,6 @@
 package option;
 
-public class BarreDeToit {
+public class BarreDeToit implements Option{
 
 	public double getPrixO() {
 

@@ -1,8 +1,8 @@
 package option;
 
-public class SiegeChauffant {
+public class SiegeChauffant implements Option {
 	
-	public Double getPrixO() {
+	public double getPrixO() {
 
 		return 562.9;
 	}

@@ -3,7 +3,8 @@ package vehicule;
 import opc.garage.Vehicule;
 
 
-public class A300B extends Vehicule{
+
+public  class A300B extends Vehicule{
 
 	public A300B(){
 	}
@@ -14,10 +15,9 @@ public class A300B extends Vehicule{
 	}
 
 	@Override
-	public double getPrix() {
+	public double getprix() {
 		// TODO Auto-generated method stub
 		return 28457.0;
 	}
-
 
 }

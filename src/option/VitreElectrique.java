@@ -1,8 +1,8 @@
 package option;
 
-public class VitreElectrique {
+public class VitreElectrique implements Option {
 
-	public Double getPrixO() {
+	public double getPrixO() {
 
 		return 212.35;
 	}

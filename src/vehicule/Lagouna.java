@@ -15,7 +15,7 @@ public  class Lagouna extends Vehicule {
 	}
 
 	@Override
-	public double getPrix() {
+	public double getprix() {
 		// TODO Auto-generated method stub
 		return 23123.0;
 	}

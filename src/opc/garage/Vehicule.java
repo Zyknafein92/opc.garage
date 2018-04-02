@@ -8,6 +8,7 @@ import java.util.List;
 
 
 
+
 public abstract class Vehicule extends Garage implements Option {
 
 	protected double prix;
@@ -71,11 +72,11 @@ public abstract class Vehicule extends Garage implements Option {
 		this.nomMarque = nomMarque;
 	}
 
-	public void AddOptions(List<Option> options) {
-		this.options = options;
+	public void addOption(Option option) {
+		this.options.add(option);
 	}
 
-	
+
 	public void setPrixT(double prixT) {
 		this.prixT = prixT;
 	}
@@ -91,5 +92,13 @@ public abstract class Vehicule extends Garage implements Option {
 		return str;
 
 	}
-// Méthode de calcul tt a faire
+	// Méthode de calcul tt a faire
+
+	public double getprix() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
 }
+

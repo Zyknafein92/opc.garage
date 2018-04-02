@@ -1,8 +1,8 @@
 package option;
 
-public class Climatisation {
+public class Climatisation implements Option {
 
-	public Double getPrixO() {
+	public double getPrixO() {
 
 		return 347.3;
 	}

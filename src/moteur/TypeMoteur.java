@@ -11,7 +11,7 @@ public enum TypeMoteur {
 
 	TypeMoteur(String pTypeMoteur) {
 
-		this.typeMoteur = pTypeMoteur;
-
+		this.typeMoteur = pTypeMoteur;	
 	}
+
 }

@@ -4,11 +4,11 @@ import moteur.TypeMoteur;
 
 
 
-public class Moteur extends Vehicule{
+public class Moteur {
 
 	protected TypeMoteur type;
 	protected String cylindre;
-	
+	protected double prix;
 
 
 	// Getters
@@ -20,13 +20,14 @@ public class Moteur extends Vehicule{
 		return cylindre;
 	}
 
-
-	
+	public double getprix() {
+		return prix;
+	}
 
 	// Setters
 
 	public void setType(TypeMoteur type) {
-		this.type = type;
+		this.type.set(type);
 	}
 
 	public void setCylindre(String cylindre) {
@@ -35,15 +36,19 @@ public class Moteur extends Vehicule{
 
 	public Moteur(String cylindre, double prix) {
 		this.cylindre = getCylindre();
-		this.prix = getPrix();
+		this.prix = getprix();
 
 	}
 
-
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+	
 	public String toString(){
-		return this.getType() + " " + this.getCylindre() + " (" + this.getPrix()  + "€) " ;
+		return this.getType() + " " + this.getCylindre() + " (" + this.getprix()  + "€) " ;
 	}
 
+	
 }
 
 

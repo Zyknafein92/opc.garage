@@ -1,8 +1,8 @@
 package option;
 
-public class GPS  {
+public class GPS implements Option {
 
-	public Double getPrixO() {
+	public double getPrixO() {
 
 		return 113.5;
 	}
