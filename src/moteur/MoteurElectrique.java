@@ -8,5 +8,4 @@ public class MoteurElectrique extends Moteur{
 		super(cylindre, prix);
 		 this.setType(TypeMoteur.ELECTRIQUE);
 	}
-
 }

@@ -8,6 +8,6 @@ public class SiegeChauffant implements Option {
 	}
 
 	public String toString(){
-		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
+		return "Siege Chauffant " + "(" + this.getPrixO() + "€)";
 	}
 }

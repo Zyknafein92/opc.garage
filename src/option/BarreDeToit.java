@@ -8,7 +8,7 @@ public class BarreDeToit implements Option{
 	}
 
 	public String toString(){
-		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
+		return "Barre de toit " + " (" + this.getPrixO() + "€)";
 	}
 
 

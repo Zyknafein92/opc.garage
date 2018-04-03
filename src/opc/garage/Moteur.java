@@ -1,53 +1,71 @@
 package opc.garage;
 
+
+
 import moteur.TypeMoteur;
 
 
 
-public class Moteur {
+
+
+public class Moteur extends Vehicule {
+
 
 	protected TypeMoteur type;
 	protected String cylindre;
-	protected double prix;
+	protected double Prix;
 
+	// Constructeur 
+	
+	public Moteur(String cylindre, double Prix) {
+		this.cylindre = cylindre;
+		this.prix = getPrix();
 
+	}
+	
+
+			
+	
 	// Getters
 	public TypeMoteur getType() {
 		return type;
 	}
 
+	public double getPrix() {
+		return prix;
+	}
+
+
 	public String getCylindre() {
 		return cylindre;
 	}
 
-	public double getprix() {
-		return prix;
-	}
 
 	// Setters
-
-	public void setType(TypeMoteur type) {
-		this.type.set(type);
-	}
 
 	public void setCylindre(String cylindre) {
 		this.cylindre = cylindre;
 	}
 
-	public Moteur(String cylindre, double prix) {
-		this.cylindre = getCylindre();
-		this.prix = getprix();
-
+	public void setPrix(double Prix) {
+		this.prix = Prix;
 	}
 
-	public void setPrix(double prix) {
-		this.prix = prix;
-	}
-	
-	public String toString(){
-		return this.getType() + " " + this.getCylindre() + " (" + this.getprix()  + "€) " ;
-	}
 
+		public String toString()
+	    {	
+	    
+	    return cylindre;
+        }
+
+	public void setType(TypeMoteur type) {
+		this.type = type;
+	}
+	@Override
+	public double getPrixO() {
+		// TODO Auto-generated method stub
+		return this.getPrixO();
+	}
 	
 }
 

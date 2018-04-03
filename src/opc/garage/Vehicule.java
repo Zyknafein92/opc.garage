@@ -7,15 +7,19 @@ import vehicule.Marque;
 import java.util.List;
 
 
-
-
 public abstract class Vehicule extends Garage implements Option {
+
+
+
 
 	protected double prix;
 	protected String nom;
 	protected List<Option> options =  new ArrayList<Option>();
 	protected Marque nomMarque;
 	protected double prixT;
+	protected Moteur moteur;
+
+
 
 
 	// Constructeur - 
@@ -38,9 +42,7 @@ public abstract class Vehicule extends Garage implements Option {
 
 	// Getters
 
-	public double getPrix() {
-		return prix;
-	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -50,12 +52,14 @@ public abstract class Vehicule extends Garage implements Option {
 	public Marque getMarque() {
 		return nomMarque;
 	}
-	public Marque getNomMarque() {
-		return nomMarque;
-	}
 
-	public double getPrixT() {
-		return prixT;
+	public double getprixT() {
+
+    return prixT = (getPrix()+getPrixO());
+}
+
+	public double getPrix() {
+		return prix;
 	}
 
 
@@ -82,23 +86,17 @@ public abstract class Vehicule extends Garage implements Option {
 	}
 
 
+	public void setMoteur(Moteur moteur) {
+		this.moteur = moteur;
 
-	// String (a revoir)
-	public String toString()
-	{
-		String str="  + Voiture "+getMarque()+" : "+getNom()
-		+" "+toString() +"("+getPrix()+"€) "
-		+ " [ ";
+	}
+
+	// to String
+
+	public String toString() {
+
+		String str = "Voiture " + getMarque() + ":" + getNom() + " " + moteur.toString() + "(" + getPrix() + "€)" + getOptions() + "pour une valeur de " + getprixT()+ " €";
 		return str;
-
+	
 	}
-	// Méthode de calcul tt a faire
-
-	public double getprix() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
 }
-

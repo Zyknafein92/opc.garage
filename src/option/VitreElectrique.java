@@ -8,7 +8,7 @@ public class VitreElectrique implements Option {
 	}
 
 	public String toString(){
-		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
+		return "Vitre électrique " + " (" + this.getPrixO() + "€)";
 	}
 
 

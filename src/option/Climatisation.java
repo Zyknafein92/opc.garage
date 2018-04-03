@@ -8,6 +8,6 @@ public class Climatisation implements Option {
 	}
 
 	public String toString(){
-		return this.getClass().getSimpleName() + " (" + this.getPrixO() + "€)";
+		return "Climatisation " + " (" + this.getPrixO() + "€)";
 	}
 }
