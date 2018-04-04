@@ -2,13 +2,13 @@ package option;
 
 public class VitreElectrique implements Option {
 
-	public double getPrixO() {
+	public double getPrix() {
 
 		return 212.35;
 	}
 
 	public String toString(){
-		return "Vitre électrique " + " (" + this.getPrixO() + "€)";
+		return "Vitre électrique " + "(" +this.getPrix() +"€)";
 	}
 
 

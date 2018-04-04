@@ -46,29 +46,30 @@ public abstract class Vehicule extends Garage implements Option {
 	public String getNom() {
 		return nom;
 	}
-	public List<Option> getOptions() {
+	public List<Option> getOptions() 
+	{
 		return options;
 	}
 	public Marque getMarque() {
 		return nomMarque;
 	}
 
-	public double getprixT() {
-
-    return prixT = (getPrix()+getPrixO());
-}
-
 	public double getPrix() {
 		return prix;
 	}
-
+	
+	public double getprixT(){
+		double Prixtotal = 0;
+		Prixtotal = prix + getPrix();
+		for(int i = 0; i < this.options.size(); i++){
+			Prixtotal +=  this.options.get(i).getPrix();
+		}
+		
+		return Prixtotal;
+	}
 
 	// Setters
 
-
-	public void setPrix(double prix) {
-		this.prix = prix;
-	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
@@ -95,8 +96,8 @@ public abstract class Vehicule extends Garage implements Option {
 
 	public String toString() {
 
-		String str = "Voiture " + getMarque() + ":" + getNom() + " " + moteur.toString() + "(" + getPrix() + "€)" + getOptions() + "pour une valeur de " + getprixT()+ " €";
+		String str = "Voiture " + getMarque() + ": " + getNom() + " "+ moteur + "(" + getPrix() + "€)" + getOptions() + "pour une valeur de " + getprixT()+ " €";
 		return str;
-	
 	}
+
 }

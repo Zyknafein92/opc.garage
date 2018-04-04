@@ -2,12 +2,14 @@ package option;
 
 public class GPS implements Option {
 
-	public double getPrixO() {
+	public double getPrix() {
 
 		return 113.5;
 	}
 
 	public String toString(){
-		return "GPS" + " (" + this.getPrixO() + "€)";
+		return "GPS" + " (" + this.getPrix() + "€)";
 	}
+
+	
 }

@@ -55,17 +55,13 @@ public class Moteur extends Vehicule {
 		public String toString()
 	    {	
 	    
-	    return cylindre;
+	    return type + getCylindre();
         }
 
 	public void setType(TypeMoteur type) {
 		this.type = type;
 	}
-	@Override
-	public double getPrixO() {
-		// TODO Auto-generated method stub
-		return this.getPrixO();
-	}
+
 	
 }
 

@@ -18,11 +18,7 @@ public  class A300B extends Vehicule {
 		return 28457.0;
 	}
 
-	@Override
-	public double getPrixO() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 	
 
 }

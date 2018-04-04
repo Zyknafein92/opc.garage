@@ -2,18 +2,20 @@ package opc.garage;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Garage 
 {
 	List<Vehicule> voitures =  new ArrayList<Vehicule>();
 
-	
+
 	public void addVoiture(Vehicule voit){
 
 		// On ajoute une voiture
 		voitures.add(voit);
-		for(int i = 0; i < voitures.size(); i++)
-	    System.out.println(voitures.get(i));
-		
+		for(Vehicule voitures : voitures)
+		{
+		System.out.println(voitures);
+		}
 	}	
 
 
@@ -23,10 +25,10 @@ public class Garage
 		str += "***************************\n";
 		str += "*  Garage OpenClassrooms  *\n";
 		str += "***************************";
-		 
-     
-      return str;
-      
+
+		  
+		return str;
+
 	}
 }
 

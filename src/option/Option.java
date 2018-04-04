@@ -7,7 +7,9 @@ public interface Option {
 
 	public String toString();
 
-	double getPrixO();
+	
+
+	public double getPrix();
 
 	
 

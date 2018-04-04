@@ -16,11 +16,7 @@ public class Lagouna extends Vehicule {
 		return 23123.0;
 	}
 
-	@Override
-	public double getPrixO() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	
 

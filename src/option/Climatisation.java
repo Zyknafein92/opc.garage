@@ -2,12 +2,14 @@ package option;
 
 public class Climatisation implements Option {
 
-	public double getPrixO() {
+	public double getPrix() {
 
 		return 347.3;
 	}
 
 	public String toString(){
-		return "Climatisation " + " (" + this.getPrixO() + "€)";
+		return "Climatisation " + " (" + this.getPrix() + "€)";
 	}
+
+	
 }

@@ -2,13 +2,13 @@ package option;
 
 public class BarreDeToit implements Option{
 
-	public double getPrixO() {
+	public double getPrix() {
 
 		return 29.9;
 	}
 
 	public String toString(){
-		return "Barre de toit " + " (" + this.getPrixO() + "€)";
+		return "Barre de toit " + " (" + this.getPrix() + "€)";
 	}
 
 

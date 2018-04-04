@@ -13,10 +13,6 @@ public  class D4 extends Vehicule {
 
 		return 25147.0;
 	}
-	@Override
-	public double getPrixO() {
-		// TODO Auto-generated method stub
-		return 0; 
-	}
+	
 
 }

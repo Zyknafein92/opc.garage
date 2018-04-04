@@ -1,13 +1,12 @@
 package moteur;
 
 
-
 public enum TypeMoteur {
 
-	DIESEL("Diesel"),
-	ESSENCE("Essence"),
-	HYBRIDE("Hybride"),
-	ELECTRIQUE("Electrique");
+	DIESEL("Moteur DIESEL "),
+	ESSENCE("Moteur ESSENCE "),
+	HYBRIDE("Moteur HYBRIDE "),
+	ELECTRIQUE("Moteur ELECTRIQUE ");
 	
 	public String type = "";
 	
